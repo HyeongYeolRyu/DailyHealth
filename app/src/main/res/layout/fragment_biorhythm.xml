@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/bioText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Good Day!"
+        android:textSize="12dp"
+        />
+
+    <ImageView
+        android:id="@+id/bioImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/bioBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신체 지수 : "
+        android:layout_gravity="center"
+
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/bioSense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="감성 지수 : "
+        android:layout_gravity="center"
+
+        android:layout_marginTop="12dp"
+        />
+
+    <TextView
+        android:id="@+id/bioBrain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="지성 지수 : "
+        android:layout_gravity="center"
+
+        android:layout_marginTop="12dp"
+        />
+
+</LinearLayout>

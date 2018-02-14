@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+
+    <GridLayout
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:rowCount="6"
+        android:columnCount="2"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="30dp"
+
+            />
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="홍길동"
+            android:singleLine="true"
+            android:enabled="true"
+            android:layout_marginLeft="60dp"
+            android:maxLength="15"
+            android:background="@null"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나이 : "
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/Age"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint=""
+            android:text="12"
+            android:singleLine="true"
+            android:layout_marginLeft="60dp"
+            android:enabled="true"
+            android:maxLength="10"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="생년월일 : "
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/Birth"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="1995-12-21"
+            android:enabled="true"
+            android:singleLine="true"
+            android:layout_marginLeft="60dp"
+            android:maxLength="20"
+            android:background="@null"
+            android:inputType="datetime"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="키(cm) : "
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/Height"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="185"
+            android:enabled="true"
+            android:singleLine="true"
+            android:layout_marginLeft="60dp"
+            android:maxLength="10"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="몸무게(kg) : "
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/Weight"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="70"
+            android:enabled="true"
+            android:singleLine="true"
+            android:layout_marginLeft="60dp"
+            android:maxLength="10"
+            android:background="@null"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="권장칼로리 : "
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/Standardcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:singleLine="true"
+            android:layout_marginLeft="63dp"
+            android:layout_marginTop="20dp"
+
+            />
+
+    </GridLayout>
+
+    <ToggleButton
+        android:id="@+id/ToggleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textOn="수정완료"
+        android:textOff="수정하기"
+        android:onClick="onToggleClicked"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>
